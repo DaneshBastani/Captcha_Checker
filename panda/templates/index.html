@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+</head>
+<body>
+    <form action="/Login " method="POST">
+        <img style="padding-left: 600px;padding-top: 150px;"  src="{{ url_for('static', filename='image/Python456.jpg')}}" alt="Captcha">
+        <br>
+        <div style="padding-left: 500px;padding-top: 50px;">
+        {{form.Text.label}} {{form.Text}}
+        <br>
+        <br>
+        {{form.Submit.label}} {{form.Submit}}
+        </div>
+    </form>
+</body>
+</html>
